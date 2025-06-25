@@ -4,24 +4,72 @@
     <meta charset="UTF-8" />
     <title>title</title>
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
     <div class="topbar" id="topbar">
-        <div class="dropdown">
-            <button class="dropdown-button" id="file">File</button>
-            <div class="dropdown-menu"></div>
+        <div class="topbar-left">
+            <div class="dropdown">
+                <button class="click-button" id="file">File</button>
+                <div class="dropdown-menu">
+                    <button class="click-button dropdown-button">Save Project</button>
+                    <button class="click-button dropdown-button">Save Project As</button>
+                    <button class="click-button dropdown-button">Load Project</button>
+                    <button class="click-button dropdown-button">Project Settings</button>
+
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="click-button" id="edit">Edit</button>
+                <div class="dropdown-menu">
+                    <button class="click-button dropdown-button">Undo Last Action</button>
+                    <button class="click-button dropdown-button">Redo Last Action</button>
+                    <button class="click-button dropdown-button">Copy</button>
+                    <button class="click-button dropdown-button">Paste</button>
+                    <button class="click-button dropdown-button">Cut</button>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="click-button" id="view">View</button>
+                <div class="dropdown-menu"></div>
+            </div>
+            <div class="dropdown">
+                <button class="click-button" id="help">Help</button>
+                <div class="dropdown-menu">RTFM (there is no manual so just figure it out)</div>
+            </div>
         </div>
-        <div class="dropdown">
-            <button class="dropdown-button" id="edit">Edit</button>
-            <div class="dropdown-menu"></div>
+        <div class="topbar-center">
+            <input class="click-button" value="Project Name">
         </div>
-        <div class="dropdown">
-            <button class="dropdown-button" id="view">View</button>
-            <div class="dropdown-menu"></div>
-        </div>
-        <div class="dropdown">
-            <button class="dropdown-button" id="help">Help</button>
-            <div class="dropdown-menu"></div>
+        <div class="topbar-right">
+            <div class="dropdown">
+                <button class="click-button">BPM: 120</button>
+                <div class="dropdown-menu">
+                    <button class="click-button">+</button>
+                    <button class="click-button">-</button>
+                    <input type="number" class="click-button" value="120">
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="click-button">Key: Cmaj</button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <button class="click-button">Major</button>
+                    <button class="click-button">Minor</button>
+                    <button class="click-button">C</button>
+                    <button class="click-button">C#</button>
+                    <button class="click-button">D</button>
+                    <button class="click-button">D#</button>
+                    <button class="click-button">E</button>
+                    <button class="click-button">F</button>
+                    <button class="click-button">F#</button>
+                    <button class="click-button">G</button>
+                    <button class="click-button">G#</button>
+                    <button class="click-button">A</button>
+                    <button class="click-button">A#</button>
+                    <button class="click-button">B</button>
+
+                </div>
+            </div>
         </div>
     </div>
 </body>
