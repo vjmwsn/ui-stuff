@@ -2,6 +2,10 @@
     display: flex;
 }
 
+.hidden {
+    display: none;
+}
+
 .click-button {
     border-radius: 0px;
     border: 0px;
@@ -86,7 +90,7 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: #42567a;
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: "Arial", sans-serif;
 }
 
 .align-left {

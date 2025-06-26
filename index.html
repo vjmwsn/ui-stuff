@@ -1,9 +1,12 @@
 <!DOCTYPE html>
+
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>title</title>
+    <title>TinyDAW</title>
     <link rel="stylesheet" href="styles.css">
+
+    <script src="main.ts"></script>
 
 </head>
 <body>
@@ -15,6 +18,8 @@
                     <button class="click-button dropdown-button">Save Project</button>
                     <button class="click-button dropdown-button">Save Project As</button>
                     <button class="click-button dropdown-button">Load Project</button>
+                    <button class="click-button dropdown-button">Load Recent Project</button>
+                    <button class="click-button dropdown-button">Export Project</button>
                     <button class="click-button dropdown-button">Project Settings</button>
 
                 </div>
@@ -37,6 +42,16 @@
                 <button class="click-button" id="help">Help</button>
                 <div class="dropdown-menu">RTFM (there is no manual so just figure it out)</div>
             </div>
+
+            <div class="dropdown">
+                <button class="click-button" i="debug">Debug</button>
+                <div class="dropdown-menu">
+                    <button class="click-button dropdown-button">MIDI Log</button>
+                    <button class="click-button dropdown-button" id="testSoundButton">Test sound</button>
+                </div>
+                
+            </div>
+
         </div>
         <div class="topbar-center">
             <input class="click-button" value="Project Name">
@@ -55,22 +70,27 @@
                 <div class="dropdown-menu dropdown-menu-right">
                     <button class="click-button">Major</button>
                     <button class="click-button">Minor</button>
-                    <button class="click-button">C</button>
-                    <button class="click-button">C#</button>
-                    <button class="click-button">D</button>
-                    <button class="click-button">D#</button>
-                    <button class="click-button">E</button>
-                    <button class="click-button">F</button>
-                    <button class="click-button">F#</button>
-                    <button class="click-button">G</button>
-                    <button class="click-button">G#</button>
-                    <button class="click-button">A</button>
-                    <button class="click-button">A#</button>
-                    <button class="click-button">B</button>
+                    <button class="click-button dropdown-button">C</button>
+                    <button class="click-button dropdown-button">C#</button>
+                    <button class="click-button dropdown-button">D</button>
+                    <button class="click-button dropdown-button">D#</button>
+                    <button class="click-button dropdown-button">E</button>
+                    <button class="click-button dropdown-button">F</button>
+                    <button class="click-button dropdown-button">F#</button>
+                    <button class="click-button dropdown-button">G</button>
+                    <button class="click-button dropdown-button">G#</button>
+                    <button class="click-button dropdown-button">A</button>
+                    <button class="click-button dropdown-button">A#</button>
+                    <button class="click-button dropdown-button">B</button>
 
                 </div>
             </div>
         </div>
     </div>
+
+    <div>
+
+    </div>
+
 </body>
 </html>
